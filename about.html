@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="C:\Users\mahin\OneDrive\style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\mahin\OneDrive\Pictures\mahi.jpg.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        Hello there! 👋 I'm Mahindh Suriyakumar, a passionate web developer with a knack for crafting beautiful and functional websites. I thrive on turning innovative ideas into reality through the power of coding and design.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+    
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                            <li><span>Web development</span><br>web app development</li>
+                            <li><span>App development</span><br>buliding android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-present</span><br>front end developer at amazon</li>
+                            <li><span>2020-2022</span><br>project manager at Honeywell</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            
+                            
+                            <li><span>2019</span><br>B-TECH from VIT Vellore</li>
+                            <li><span>2015</span><br>schooling from Velammal</li>
+                        </ul>
+                    </div>
+    
+                </div>
+                 
+            </div>
+            <script>
+                var tablinks=document.getElementsByClassName("tab-links");
+                var tabcontents=document.getElementsByClassName("tab-contents");
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+                
+            </script>
+            </div>
+            </div>
+</body>
+</html>
