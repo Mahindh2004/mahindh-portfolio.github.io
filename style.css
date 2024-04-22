@@ -167,7 +167,7 @@ nav ul li a:hover::after{
 }
 #portfolio{
     padding: 50px 0;
-    background-image: url(Pictures/port.jpeg);
+    background-image: url(port.jpeg);
 }
 .work-list{
     display: grid;
