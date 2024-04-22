@@ -1,1 +1,1 @@
-# mahindh-sportfolio.github.io
+# mahindh-portfolio.github.io
