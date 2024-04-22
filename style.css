@@ -128,7 +128,7 @@ nav ul li a:hover::after{
 }
 #services{
     padding: 100px 0;
-    background-image: url(Pictures/ghgh.jpeg);
+    background-image: url(ghgh.jpeg);
 }
 .services-list{
     display: grid;
